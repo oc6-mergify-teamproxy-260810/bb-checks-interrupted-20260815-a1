@@ -1,7 +1,6 @@
 queue_rules:
   - name: default
     queue_conditions: []
-    merge_conditions:
-      - label = BB_PRODUCT_REVOCATION_GATE_20260815
+    merge_conditions: []
     batch_size: 1
     merge_method: merge
