@@ -2,9 +2,6 @@ queue_rules:
   - name: default
     queue_conditions: []
     merge_conditions:
-      - check-success = BB_INTERRUPTED_GATE_20260815
+      - label = BB_PRODUCT_REVOCATION_GATE_20260815
     batch_size: 1
-    allow_inplace_checks: false
-    max_checks_retries: 0
-    checks_timeout: 10 minutes
     merge_method: merge
